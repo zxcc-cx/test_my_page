@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      h1 {
+        margin: 100px 0 0;
+        text-align: center;
+      }
+      .container {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin: 10px auto;
+        background-color: wheat;
+        border-radius: 50%;
+      }
+      div[class^="demo"] {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 50%;
+      }
+      .demo1 {
+        position: absolute;
+        left: 25%;
+        top: 0px;
+        transform-origin: center bottom;
+        animation: myanime 2s infinite linear;
+      }
+      .demo2 {
+        position: absolute;
+        left: 25%;
+        bottom: 0px;
+        transform-origin: center top;
+        animation: myanime 2s infinite linear;
+      }
+      @keyframes myanime {
+        100% {
+          transform: rotate(-360deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>练习使用码云page-2022_2_1</h1>
+    <div class="container">
+      <div class="demo1"></div>
+      <div class="demo2"></div>
+    </div>
+  </body>
+</html>
